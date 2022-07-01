@@ -15,6 +15,7 @@ const StyledHeroSection = styled.section`
   @media (max-width: 480px) and (min-height: 700px) {
     padding-bottom: 10vh;
   }
+ 
 
   h1 {
     margin: 0 0 30px 4px;

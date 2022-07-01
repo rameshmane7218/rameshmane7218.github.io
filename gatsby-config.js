@@ -7,7 +7,7 @@ module.exports = {
       'Ramesh Mane is Aspiring Full Stack Web Developer from Maharashtra, India',
     siteUrl: 'https://rameshmane7218githubiomaster.gatsbyjs.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
