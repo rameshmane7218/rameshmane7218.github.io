@@ -3,14 +3,14 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
-// import { email } from '@config';
+import { email } from '@config';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 0;
+  //padding: 0;
 
   @media (max-width: 480px) and (min-height: 700px) {
     padding-bottom: 10vh;
@@ -60,14 +60,23 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Ramesh Mane.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const three = <h3 className="big-heading">I love building and learning new things.</h3>;
   const four = (
     <>
-      <p>Full-stack web developer. Love building and learning new things...</p>
+      <p>Aspiring Full-stack web developer from Maharashtra, India</p>
     </>
   );
+  const five = (
+    <a
+      className="email-link"
+      href={`mailto:${email}`} 
+      target="_blank"
+      rel="noreferrer">
+      Get in Touch
+    </a>
+  );
 
-  const items = [one, two, three, four];
+  const items = [one, two, three, four,five];
 
   return (
     <StyledHeroSection>

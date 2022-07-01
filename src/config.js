@@ -7,16 +7,16 @@ module.exports = {
       url: 'https://github.com/rameshmane7218',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/r_a_m_e_s_h_7218',
-    },
-    {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/ramesh-mane-268a0014a',
     },
     {
-      name: 'Codepen',
-      url: '',
+      name: 'Medium',
+      url: 'https://medium.com/@rameshmane7218',
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/r_a_m_e_s_h_7218',
     },
   ],
 
@@ -25,10 +25,10 @@ module.exports = {
       name: 'About',
       url: '/#about',
     },
-    {
-      name: 'Skills',
-      url: '#',
-    },
+    // {
+    //   name: 'Skills',
+    //   url: '#',
+    // },
     {
       name: 'Projects',
       url: '/#projects',
