@@ -14,7 +14,7 @@
   "license": "MIT",
   "browserslist": "> 0.25%, not dead",
   "scripts": {
-    "build": "gatsby build",
+    "build": "GENERATE_SOURCEMAP=false gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
@@ -22,8 +22,8 @@
     "clean": "gatsby clean",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "predeploy": "npm run build",
-    "deploy": "gatsby build && gh-pages -b master -d public"
+    "predeploy": "GENERATE_SOURCEMAP=false npm run build",
+    "deploy": "GENERATE_SOURCEMAP=false gatsby build && gh-pages -b master -d public"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
