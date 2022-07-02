@@ -3,7 +3,7 @@ date: '4'
 title: 'Shop.com Clone'
 cover: './shopcom.png'
 github: 'https://github.com/rameshmane7218/shop.com'
-external: 'https://www.newline.co/courses/build-a-spotify-connected-app'
+external: 'https://ephemeral-cactus-fa8c49.netlify.app/'
 tech:
   - HTML
   - CSS
