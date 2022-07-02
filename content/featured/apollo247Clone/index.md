@@ -3,6 +3,7 @@ date: '3'
 title: 'Apollo 24/7 Clone'
 cover: './apollo.png'
 github: 'https://github.com/rameshmane7218/apollo-Project'
+medium: 'https://medium.com/@rameshmane7218/the-growing-creatives-7aad7075f268'
 external: 'https://beautiful-liger-b337d8.netlify.app/'
 tech:
   - HTML

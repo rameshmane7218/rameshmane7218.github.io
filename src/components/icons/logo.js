@@ -18,7 +18,7 @@ const IconLogo = () => (
           strokeLinejoin="round"
           points="39 0 0 22 0 67 39 90 78 68 78 23"
         />
-         <text x="39" y="47"  fill="#64ffda" dominant-baseline="middle" text-anchor="middle" fontWeight="bold" font-size="43">R</text>
+         <text x="39" y="47"  fill="#64ffda" dominantBaseline="middle" textAnchor="middle" fontWeight="bold" fontSize="43">R</text>
       </g>
     </g>
   </svg>

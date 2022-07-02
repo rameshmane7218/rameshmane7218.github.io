@@ -322,6 +322,7 @@ const Featured = () => {
               awarded
               tech
               github
+              medium
               external
               solo
             }
@@ -356,16 +357,31 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta, awarded,solo } = frontmatter;
+            const {
+              external,
+              title,
+              tech,
+              github,
+              medium,
+              cover,
+              cta,
+              awarded,
+              solo,
+            } = frontmatter;
             const image = getImage(cover);
-            console.log("Reward: ", title);
+            console.log('Reward: ', title);
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    {solo ?<p className="project-overline">{solo}</p>: awarded ? <p className="project-overline">{awarded} | Group Project</p> : <p className="project-overline">Group Project</p>}
-                    
+                    {solo ? (
+                      <p className="project-overline">{solo}</p>
+                    ) : awarded ? (
+                      <p className="project-overline">{awarded} | Group Project</p>
+                    ) : (
+                      <p className="project-overline">Group Project</p>
+                    )}
 
                     <h3 className="project-title">
                       <a href={external}>{title}</a>
@@ -395,6 +411,12 @@ const Featured = () => {
                           <Icon name="GitHub" />
                         </a>
                       )}
+                      {medium && (
+                        <a href={medium} aria-label="Medium Link">
+                          <Icon name="Medium" />
+                        </a>
+                      )}
+
                       {external && !cta && (
                         <a href={external} aria-label="External Link" className="external">
                           <Icon name="External" />
